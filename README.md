@@ -94,16 +94,16 @@ from fluently import fluenttuple, flutuple, ftuple
 # Create a new fluenttuple instance
 data = fluenttuple(["A", "B", "C"])
 
-# Assert that the set has the expected class identity, aliases and superclass
+# Assert that the tuple has the expected class identity, aliases and superclass
 assert isinstance(data, fluenttuple)
 assert isinstance(data, flutuple)
 assert isinstance(data, ftuple)
 assert isinstance(data, tuple)
 
-# Assert that the set has the expected length
+# Assert that the tuple has the expected length
 assert data.length() == len(data) == 3
 
-# Assert that the set has the expected contents
+# Assert that the tuple has the expected contents
 assert "A" in data
 assert "B" in data
 assert "C" in data
