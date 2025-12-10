@@ -1,0 +1,42 @@
+x-volumes: &volumes
+  - ./README.md:/README.md
+  - ./source:/source
+  - ./source/fluently:/source/fluently
+  - ./source/fluently:/usr/local/lib/python/site-packages/fluently
+  - ./tests:/tests
+
+services:
+
+  black:
+    container_name: fluently-black
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: fluently-black
+    environment:
+      - SERVICE=black
+    volumes:
+      *volumes
+
+  flakes:
+    container_name: fluently-flakes
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: fluently-flakes
+    environment:
+      - SERVICE=flakes
+    command: pyflakes /source /tests
+    volumes:
+      *volumes
+
+  tests:
+    container_name: fluently-tests
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: fluently-tests
+    environment:
+      - SERVICE=tests
+    volumes:
+      *volumes
