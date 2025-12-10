@@ -24,7 +24,7 @@ using `pip` via the `pip install` command by entering the following into your sh
 
 To use the Fluently library, import the library and the data type or data types you
 need and use them just like their regular counterparts, with the knowledge that they
-support setting and getting values without regard to the casing of any string keys:
+support fluent interfaces which can often be more convenient and expressive to use:
 
 #### Fluent List
 
