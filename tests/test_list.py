@@ -371,6 +371,7 @@ def test_fluent_list_unique(numbers: fluentlist[int]):
     # values appeared in the original list:
     assert numbers.unique() == newnumbers
 
+
 def test_fluent_list_sort(numbers: fluentlist[int]):
     """Test the 'sort' method of the 'fluentlist' class."""
 

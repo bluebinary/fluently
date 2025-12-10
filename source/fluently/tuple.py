@@ -282,5 +282,6 @@ class fluenttuple(tuple):
 
         return self.remove(item)
 
+
 # Shorthand aliases
 ftuple = flutuple = fluenttuple

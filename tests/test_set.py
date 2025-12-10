@@ -134,6 +134,7 @@ def test_fluent_set_remove():
 
     assert not "D" in letters
 
+
 def test_fluent_set_discard():
     """Test the 'discard' method of the 'fluentset' class."""
 
@@ -159,6 +160,7 @@ def test_fluent_set_discard():
     assert updatedletters is letters
 
     assert not "D" in letters
+
 
 def test_fluent_set_clear():
     """Test the 'clear' method of the 'fluentset' class."""

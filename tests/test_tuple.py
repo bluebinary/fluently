@@ -447,7 +447,6 @@ def test_fluent_tuple_all():
     assert newletters.count("D") == 2
 
 
-
 def test_fluent_tuple_map(numbers: fluenttuple[int]):
     """Test the 'map' method of the 'fluenttuple' class."""
 
@@ -762,4 +761,3 @@ def test_fluent_tuple_last_with_empty_tuple(things: fluenttuple[Thing]):
 
     # When the tuple is empty, we expect .last() to return None
     assert thing is None
-
