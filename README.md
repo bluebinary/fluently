@@ -258,10 +258,10 @@ by the `list` superclass:
  * `filter(predicate: callable = None, **filters: dict[str, object])` 🔗 (`fluentlist`)
  – The `filter()` method supports filtering the contents of the current list in the two
  ways noted below, and returns the filtered results as a new list:
-  - filtering can be performed via a `predicate` callable method that takes as input the
+   - filtering can be performed via a `predicate` callable method that takes as input the
   current item as the list is iterated over, where the `predicate` must return `True` for
   items that should remain in the output, and `False` otherwise;
-  - alternatively, filtering can be performed via one or more keyword arguments, excepting
+   - alternatively, filtering can be performed via one or more keyword arguments, excepting
   the reserved `predicate` keyword, which define the names and values of object attributes
   that the item objects held in the list must match to be included in the output. Each item
   in the list will be inspected to see if has the specified attribute (as per the keyword
@@ -513,10 +513,10 @@ by the `tuple` superclass:
  * `filter(predicate: callable = None, **filters: dict[str, object])` 🔗 (`fluenttuple`)
  – The `filter()` method supports filtering the contents of the current tuple in the two
  ways noted below, and returns the filtered results as a new tuple:
-  - filtering can be performed via a `predicate` callable method that takes as input the
+   - filtering can be performed via a `predicate` callable method that takes as input the
   current item as the tuple is iterated over, where the `predicate` must return `True` for
   items that should remain in the output, and `False` otherwise;
-  - alternatively, filtering can be performed via one or more keyword arguments, excepting
+   - alternatively, filtering can be performed via one or more keyword arguments, excepting
   the reserved `predicate` keyword, which define the names and values of object attributes
   that the item objects held in the tuple must match to be included in the output. Each item
   in the tuple will be inspected to see if has the specified attribute (as per the keyword
