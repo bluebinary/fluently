@@ -138,7 +138,7 @@ by the `list` superclass:
  further chaining, but can be used as the last call on chain of other `fluentlist` methods
  that do support chaining.
 
- * `clone()` (`fluentlist`) – The `clone()` method supports creating a cloned copy of the
+ * `clone()` 🔗 (`fluentlist`) – The `clone()` method supports creating a cloned copy of the
  current list, that contains the same items, in a separate `fluentlist` instance.
 
  * `prepend(item: object)` 🔗 (`fluentlist`) – The `prepend()` method supports prepending
@@ -368,7 +368,7 @@ by the `set` superclass:
  further chaining, but can be used as the last call on chain of other `fluentset` methods
  that do support chaining.
 
- * `clone()` (`fluentset`) – The `clone()` method supports creating a cloned copy of the
+ * `clone()` 🔗 (`fluentset`) – The `clone()` method supports creating a cloned copy of the
  current set, that contains the same items, in a separate `fluentset` instance.
 
  * `add(item: object)` 🔗 (`fluentset`) – The `add()` method supports adding the specified
@@ -407,7 +407,7 @@ by the `tuple` superclass:
  further chaining, but can be used as the last call on chain of other `fluenttuple` methods
  that do support chaining.
 
- * `clone()` (`fluenttuple`) – The `clone()` method supports creating a cloned copy of
+ * `clone()` 🔗 (`fluenttuple`) – The `clone()` method supports creating a cloned copy of
  the current tuple, that contains the same items, in a separate `fluenttuple` instance.
 
  * `add(item: object)` 🔗 (`fluenttuple`) – The `add()` method supports appending the
