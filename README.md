@@ -636,4 +636,4 @@ See the documentation for [PyTest](https://docs.pytest.org/en/latest/) regarding
 
 ### Copyright & License Information
 
-Copyright © 2025 Daniel Sissman; licensed under the MIT License.
+Copyright © 2025-2026 Daniel Sissman; licensed under the MIT License.
