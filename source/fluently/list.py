@@ -292,7 +292,7 @@ class fluentlist(list):
     ) -> object | None:
         """Supports returning the first element or None if the list is empty."""
 
-        if len(filters) > 0:
+        if callable(predicate) or len(filters) > 0:
             items = self.filter(predicate=predicate, **filters)
         else:
             items = self
@@ -304,7 +304,7 @@ class fluentlist(list):
     ) -> object | None:
         """Supports returning the last element or None if the list is empty."""
 
-        if len(filters) > 0:
+        if callable(predicate) or len(filters) > 0:
             items = self.filter(predicate=predicate, **filters)
         else:
             items = self
